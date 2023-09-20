@@ -54,43 +54,26 @@ body {
     height: calc(100vh - var(--altura_cabecalho));
 }
 
-.menu{
+.corpo__menu {
     width: 20%;
     height: 100%;    
     background-color: var(--cor_menu_lateral);
 }
 
-.menu__link{
-    padding-left: 20px;
-}
-
-.menu__link:hover {
-    background-color: cyan;
+.corpo__menu__nav button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    color: white;
     cursor: pointer;
+    gap: 10px;
+    padding-left: 15px;
 }
 
-
-
-/*
-@media (max-width : 500px) {
-    .menu {
-        display: none;
-    }
+.corpo__menu__nav button:hover {
+    background: #D9BF77;
+    color: black;
 }
-
-@media (min-width : 500px) and (max-width : 600px)  {
-    .menu {
-        background-color: blue;
-    }
-}
-
-@keyframes animacao {
-    from {
-        background-color: red;
-    }
-
-    to {
-        background-color: blue;
-    }
-}
-*/
