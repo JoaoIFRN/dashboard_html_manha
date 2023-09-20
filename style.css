@@ -1,0 +1,96 @@
+/*Exemplo de reset de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+:root{
+    --cor_menu : #B0D9B1;
+    --cor_menu_lateral : #639A67;
+    --altura_cabecalho: 55px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    background-color: var(--cor_menu);
+    align-items: center;
+    height: var(--altura_cabecalho);
+    padding: 35px 40px;
+}
+
+.cabecalho__detalhes {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__detalhes__logo {
+    width: 140px;
+    margin-right: 10px;
+}
+
+.cabecalho__detalhes__logo:hover{
+    transform: scale(1.2);
+}
+
+.cabecalho__detalhes__user{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover; /* Melhora a apresentação da imagem, diminuindo distorções */
+}
+
+.cabecalho__detalhes__user:hover{
+    transform: scale(1.2);
+}
+
+.corpo{
+    height: calc(100vh - var(--altura_cabecalho));
+}
+
+.menu{
+    width: 20%;
+    height: 100%;    
+    background-color: var(--cor_menu_lateral);
+}
+
+.menu__link{
+    padding-left: 20px;
+}
+
+.menu__link:hover {
+    background-color: cyan;
+    cursor: pointer;
+}
+
+
+
+/*
+@media (max-width : 500px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width : 500px) and (max-width : 600px)  {
+    .menu {
+        background-color: blue;
+    }
+}
+
+@keyframes animacao {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+*/
