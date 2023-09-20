@@ -52,6 +52,7 @@ body {
 
 .corpo{
     height: calc(100vh - var(--altura_cabecalho));
+    display: flex;
 }
 
 .corpo__menu {
@@ -76,4 +77,9 @@ body {
 .corpo__menu__nav button:hover {
     background: #D9BF77;
     color: black;
+}
+
+.corpo__principal {
+    width: 80%;
+    height: 100%;
 }
